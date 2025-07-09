@@ -1,13 +1,29 @@
+/* src/index.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .text-matrix-green {
-    color: #08ff08;
-  }
+/* Custom animation overrides */
+body {
+  font-family: 'JetBrains Mono', monospace;
+  background-color: black;
+}
 
-  .bg-cyber-blue {
-    background-color: #00f7ff;
-  }
+.text-matrix-green {
+  color: #08ff08;
+}
+
+.bg-cyber-blue {
+  background-color: #00f7ff;
+}
+
+/* Additional styles for glowing text */
+.text-cyber-blue {
+  color: #00f7ff;
+  text-shadow: 0 0 10px rgba(0, 247, 255, 0.8);
+}
+
+.bg-cyber-blue {
+  background-color: #00f7ff;
+  transition: all 0.3s ease;
 }
